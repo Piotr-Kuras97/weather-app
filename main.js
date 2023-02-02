@@ -34,9 +34,9 @@ const locationWeather = () => {
             <span>${name}</span> 
             <sup>${sys.country}</sup> 
             </h2> 
-            <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup> 
+            <div class="city-temp">${(main.temp).toFixed(2)}<sup>°C</sup> 
             </div> 
-            <div>Perceived temperature: ${Math.round(main.feels_like)}°C </div>
+            <div>Perceived temperature: ${(main.feels_like).toFixed(2)}°C </div>
             <figure> 
             <img class="city-icon" src=${icon} alt=${weather[0]["main"]}> 
             <figcaption>${weather[0]["description"]}</figcaption> 
@@ -125,9 +125,9 @@ form.addEventListener("submit", e => {
     <span>${name}</span> 
     <sup>${sys.country}</sup> 
     </h2> 
-    <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup> 
+    <div class="city-temp">${(main.temp).toFixed(2)}<sup>°C</sup> 
     </div> 
-    <div>Perceived temperature: ${Math.round(main.feels_like)}°C </div>
+    <div>Perceived temperature: ${(main.feels_like).toFixed(2)}°C </div>
     <figure> 
     <img class="city-icon" src=${icon} alt=${weather[0]["main"]}> 
     <figcaption>${weather[0]["description"]}</figcaption> 
