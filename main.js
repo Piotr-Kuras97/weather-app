@@ -61,8 +61,9 @@ const locationWeather = () => {
     const location = navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
 }
-
+if(navigator.geolocation){
 locationWeather()
+}
 
 
 
